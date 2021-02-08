@@ -12,11 +12,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start-and-test": "killall node; npm start & npx cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
