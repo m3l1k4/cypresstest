@@ -6,6 +6,9 @@ describe('name of the group', () => {
     it('should', ()=>{
         cy.visit('/')
         cy.get('.App-link')//select by class
-        cy.contains('Learn React')
+        .within(()=>{
+          cy.contains('Learn React')  
+        })
+        
     })
 })
