@@ -4,6 +4,8 @@ describe('name of the group', () => {
     })
 
     it('should', ()=>{
-        cy.visit('http://localhost:3000/')
+        cy.visit('/')
+        cy.get('.App-link')//select by class
+        cy.contains('Learn React')
     })
 })
