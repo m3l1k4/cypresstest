@@ -8,7 +8,7 @@ export class App extends React.Component{
   }
 }
 
-export const AppComponent=() => {
+export const AppComponent=(message) => {
   return (
     <div className="App">
       <header className="App-header">

@@ -1,12 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import ReactDOM from 'react-dom';
-import {App} from './App';
-it ('renders without crashing', ()=>{
- //with react testing libry
- const{getByText}=render(<App />)
- getByText("Learn React")
+import { AppComponent } from './App';
+it('renders without crashing', () => {
+  //with react testing libry
+  const { getByText } = render(<AppComponent
+    message={'Learn Reacsst'}
+  />)
 
- //with reactDOM
+
+  getByText("Learn React") 
+
+  //with reactDOM
   // const div = document.createElement('div');
   // ReactDOM.render(<App />, div);
   // ReactDOM.unmountComponentAtNode(div);
